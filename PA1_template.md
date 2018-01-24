@@ -107,6 +107,17 @@ plot(stepsPerInterval$interval, stepsPerInterval$averageStepsPerInterval, type =
 
 ![](PA1_template_files/figure-html/stepsPerInterval-1.png)<!-- -->
 
+Let's find, which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps:
+
+
+```r
+stepsPerInterval[which.max(stepsPerInterval$averageStepsPerInterval),]$interval
+```
+
+```
+## [1] 835
+```
+
 ## Imputing missing values
 
 Here is the total number of missing values in the dataset:
